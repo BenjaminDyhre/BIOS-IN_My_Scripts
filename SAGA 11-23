@@ -1,0 +1,1023 @@
+$ ssh bsdyhre@saga.sigma2.no
+bsdyhre@saga.sigma2.no's password:
+Last login: Mon Nov 15 12:49:08 2021 from 193.157.206.63
+Welcome to saga.sigma2.no!
+
+Documentation:  https://documentation.sigma2.no/
+Support email:  support@nris.no
+Request resources:
+                https://www.sigma2.no/content/apply-e-infrastructure-resources/
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Latest news from:       https://opslog.sigma2.no/
+
+  o 2021-11-22: Downtime Betzy, 6th December 08:00 until 9th December 08:00
+  o 2021-11-16: Short 1 hour downtime on Fram, 24th November 12:00
+  o 2021-11-08: Sigma2 router 2 upgrade in Troms
+  o 2021-11-08: [FINISHED] Saga downtime 17th November 12:00 -19th November 15:0
+  o 2021-11-03: Sigma2 router upgrade in Troms
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NOTE: Current $USERWORK autocleanup period is 42 days.
+
+WARNING: Your home directory ($HOME) is only backed up if it has quotas enforced.
+         For more info see: https://documentation.sigma2.no/files_storage/backup.html
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[bsdyhre@login-5.SAGA ~]$ /cluster/projects/nn9986k/BIOS5410/sbatch_submission/test_script.sh
+-bash: /cluster/projects/nn9986k/BIOS5410/sbatch_submission/test_script.sh: Permission denied
+[bsdyhre@login-5.SAGA ~]$ cd /cluster/projects/nn9986k/BIOS5410/sbatch_submission/test_script.sh
+-bash: cd: /cluster/projects/nn9986k/BIOS5410/sbatch_submission/test_script.sh: Not a directory
+[bsdyhre@login-5.SAGA ~]$ /cluster
+-bash: /cluster: Is a directory
+[bsdyhre@login-5.SAGA ~]$ cd /cluster
+[bsdyhre@login-5.SAGA /cluster]$ ls
+backup  etc   installations  man          projects  shared    software_images  test  var
+bin     home  lib            modulefiles  sbin      software  staff            tmp   work
+[bsdyhre@login-5.SAGA /cluster]$ cd projects/
+[bsdyhre@login-5.SAGA /cluster/projects]$ ls
+nn0000k  nn4654k  nn8016k  nn9165k  nn9312k  nn9386k  nn9515k  nn9601k  nn9690k  nn9742k  nn9789k  nn9836k  nn9884k
+nn1000k  nn4659k  nn8017k  nn9176k  nn9313k  nn9391k  nn9517k  nn9603k  nn9692k  nn9744k  nn9790k  nn9837k  nn9886k
+nn1003k  nn4662k  nn8019k  nn9180k  nn9316k  nn9393k  nn9519k  nn9605k  nn9697k  nn9745k  nn9792k  nn9839k  nn9888k
+nn1004k  nn4683k  nn8020k  nn9186k  nn9317k  nn9407k  nn9520k  nn9606k  nn9699k  nn9746k  nn9793k  nn9841k  nn9891k
+nn2147k  nn4685k  nn8021k  nn9188k  nn9320k  nn9408k  nn9522k  nn9614k  nn9701k  nn9750k  nn9794k  nn9842k  nn9893k
+nn2343k  nn4700k  nn8023k  nn9201k  nn9328k  nn9409k  nn9523k  nn9619k  nn9704k  nn9751k  nn9795k  nn9845k  nn9895k
+nn2506k  nn5001k  nn8024k  nn9202k  nn9329k  nn9417k  nn9524k  nn9623k  nn9705k  nn9753k  nn9796k  nn9846k  nn9896k
+nn2615k  nn5002k  nn8026k  nn9203k  nn9336k  nn9419k  nn9525k  nn9628k  nn9707k  nn9755k  nn9799k  nn9847k  nn9899k
+nn2649k  nn5007k  nn8031k  nn9204k  nn9338k  nn9427k  nn9527k  nn9632k  nn9710k  nn9756k  nn9800k  nn9848k  nn9914k
+nn2806k  nn5008k  nn8033k  nn9208k  nn9341k  nn9431k  nn9529k  nn9635k  nn9711k  nn9758k  nn9802k  nn9849k  nn9915k
+nn2849k  nn5009k  nn8034k  nn9209k  nn9342k  nn9433k  nn9531k  nn9637k  nn9713k  nn9759k  nn9803k  nn9850k  nn9916k
+nn2855k  nn5010k  nn8038k  nn9229k  nn9343k  nn9440k  nn9535k  nn9638k  nn9714k  nn9760k  nn9804k  nn9851k  nn9920k
+nn2867k  nn5014k  nn8040k  nn9244k  nn9351k  nn9447k  nn9537k  nn9639k  nn9715k  nn9761k  nn9805k  nn9854k  nn9986k
+nn2875k  nn5015k  nn8068k  nn9249k  nn9353k  nn9449k  nn9540k  nn9643k  nn9719k  nn9764k  nn9806k  nn9855k  nn9987k
+nn2916k  nn5016k  nn8888k  nn9254k  nn9355k  nn9453k  nn9541k  nn9648k  nn9720k  nn9766k  nn9807k  nn9856k  nn9988k
+nn2936k  nn5019k  nn9010k  nn9255k  nn9356k  nn9458k  nn9542k  nn9649k  nn9722k  nn9768k  nn9810k  nn9857k  nn9989k
+nn2962k  nn5092k  nn9036k  nn9259k  nn9359k  nn9461k  nn9547k  nn9650k  nn9723k  nn9769k  nn9812k  nn9858k  nn9990k
+nn2967k  nn6000k  nn9055k  nn9275k  nn9365k  nn9462k  nn9549k  nn9651k  nn9724k  nn9772k  nn9813k  nn9859k  nn9992k
+nn2977k  nn6001k  nn9080k  nn9279k  nn9370k  nn9464k  nn9550k  nn9654k  nn9725k  nn9773k  nn9820k  nn9860k  nn9994k
+nn2984k  nn8000k  nn9107k  nn9281k  nn9373k  nn9466k  nn9555k  nn9655k  nn9726k  nn9776k  nn9823k  nn9861k  nn9995k
+nn3556k  nn8006k  nn9108k  nn9283k  nn9374k  nn9469k  nn9559k  nn9656k  nn9728k  nn9777k  nn9825k  nn9862k  nn9997k
+nn4557k  nn8007k  nn9110k  nn9284k  nn9376k  nn9476k  nn9560k  nn9668k  nn9730k  nn9778k  nn9826k  nn9864k  nn9998k
+nn4563k  nn8008k  nn9114k  nn9294k  nn9377k  nn9477k  nn9563k  nn9671k  nn9732k  nn9779k  nn9828k  nn9865k  nn9999k
+nn4604k  nn8009k  nn9129k  nn9295k  nn9378k  nn9482k  nn9564k  nn9675k  nn9733k  nn9780k  nn9830k  nn9866k
+nn4605k  nn8010k  nn9132k  nn9299k  nn9380k  nn9493k  nn9573k  nn9679k  nn9735k  nn9781k  nn9831k  nn9868k
+nn4608k  nn8012k  nn9136k  nn9303k  nn9381k  nn9497k  nn9587k  nn9680k  nn9736k  nn9783k  nn9832k  nn9881k
+nn4650k  nn8013k  nn9139k  nn9305k  nn9383k  nn9503k  nn9592k  nn9687k  nn9738k  nn9785k  nn9833k  nn9882k
+nn4651k  nn8014k  nn9158k  nn9307k  nn9385k  nn9505k  nn9600k  nn9688k  nn9740k  nn9787k  nn9835k  nn9883k
+[bsdyhre@login-5.SAGA /cluster/projects]$ cd nn9986k/
+[bsdyhre@login-5.SAGA /cluster/projects/nn9986k]$ ls
+BIOS5410
+[bsdyhre@login-5.SAGA /cluster/projects/nn9986k]$ cd BIOS5410/
+[bsdyhre@login-5.SAGA /cluster/projects/nn9986k/BIOS5410]$ ls
+BIOS-IN5410  microbiomeseq  Rlibs  RNAseq  sbatch_submission  script_test  smallRNAseq
+[bsdyhre@login-5.SAGA /cluster/projects/nn9986k/BIOS5410]$ cd sbatch_submission/
+[bsdyhre@login-5.SAGA /cluster/projects/nn9986k/BIOS5410/sbatch_submission]$ ls
+allChroms.tar.gz  Example_Bluefin_tuna.vcf.gz  fileMoveScript.py  test_script.sh  test_vcf.sh
+[bsdyhre@login-5.SAGA /cluster/projects/nn9986k/BIOS5410/sbatch_submission]$ cat test_script.sh
+#!/bin/bash
+
+#SBATCH --job-name=test_job     #give jobs a name
+#SBATCH --account=nn9986k       #current project that we are on
+#SBATCH --nodes=1               #number of nodes/CPU
+#SBATCH --ntasks=1              #how many tasks to run simutanously
+#SBATCH --time=3:00:00          #how long the job will go for
+#SBATCH --mem=1G                #how much memory
+
+## Set up job environment
+set -o errexit                  # Exit script on any error
+set -o nounset                  # Treat any unset variables as an error
+
+module --quiet purge            #this resets the module environment, always good to start clean!
+
+## DO SOMETHING
+## Copy some input files to the work directory:
+touch file.txt          #create some empty file
+cp $SUBMITDIR/file.txt $SCRATCH
+
+## Make a directory in the directory from WHERE you submitted the script
+mkdir -p $SUBMITDIR/result      #create a results directory
+
+## Copy output files to where you started the script
+cp $SCRATCH/file.txt  $SUBMITDIR/result/
+
+## Remove the file.txt from the $SUBMITDIR  (you're still there)
+rm file.txt
+
+## Display a message
+echo "Ran a job on file.txt!"
+
+## move to the job_specific work directory
+cd $SCRATCH
+
+## Message that you are done with the job
+echo "Finished running jobs"
+[bsdyhre@login-5.SAGA /cluster/projects/nn9986k/BIOS5410/sbatch_submission]$ cd /cluster/home/bsdyhre/BIOS-IN5410
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410]$ ls
+fasta  scripts  subDir1  subDir2  subDir3
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410]$ mkdir sbatch_intro
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410]$ ls
+fasta  sbatch_intro  scripts  subDir1  subDir2  subDir3
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410]$ cp /cluster/projects/nn9986k/BIOS5410/sbatch_submission/test_script.sh
+cp: missing destination file operand after ‘/cluster/projects/nn9986k/BIOS5410/sbatch_submission/test_script.sh’
+Try 'cp --help' for more information.
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410]$ cp /cluster/projects/nn9986k/BIOS5410/sbatch_submission/test_script.sh /cluster/home/bsdyhre/BIOS-IN5410/sbatch_intro/
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410]$ ls
+fasta  sbatch_intro  scripts  subDir1  subDir2  subDir3
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410]$ cd sbatch_intro/
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ ls
+test_script.sh
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ sbatch test_script.sh
+Submitted batch job 4448160
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ squeue -u bsdyhre
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ ls
+result  slurm-4448160.out  test_script.sh
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ cat slurm-4448160.out
+Starting job 4448160 on c5-59 at Tue Nov 23 09:39:31 CET 2021
+
+  1) StdEnv
+Ran a job on file.txt!
+Finished running jobs
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- --------
+4448160        test_job          1                                             00:00:02      0:0
+4448160.bat+      batch          1        1   00:00:00          0   00:00:00   00:00:02      0:0
+4448160.ext+     extern          1        1   00:00:00          0   00:00:00   00:00:02      0:0
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages
+------------ ---------- ---------- ---------- -------- -------------- ----------
+4448160
+4448160.bat+          0          0          0        0              0          0
+4448160.ext+          0          0          0        0              0          0
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite
+------------ ------------ --------------- -------------- ------------ ---------------- --------------
+4448160
+4448160.bat+            0               0              0            0                0              0
+4448160.ext+        0.00M               0          0.00M            0                0              0
+
+Job 4448160 completed at Tue Nov 23 09:39:34 CET 2021
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ cp $SCRATCH/files.txt $SUBMITDIR/result/
+cp: cannot stat ‘/files.txt’: No such file or directory
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ cp $SCRATCH/file.txt $SUBMITDIR/result/
+cp: cannot stat ‘/file.txt’: No such file or directory
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ ls
+result  slurm-4448160.out  test_script.sh
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ cd result/
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro/result]$ ls
+file.txt
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro/result]$ cp $SCRATCH/file.txt $SUBMITDIR/result/
+cp: cannot stat ‘/file.txt’: No such file or directory
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro/result]$ cd ..
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ cd result/
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro/result]$ ls
+file.txt
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro/result]$ cp file.txt
+cp: missing destination file operand after ‘file.txt’
+Try 'cp --help' for more information.
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro/result]$ cp file.txt cd ..
+cp: cannot stat ‘cd’: No such file or directory
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro/result]$ cd ..
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ cd result/
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro/result]$ cp --help
+Usage: cp [OPTION]... [-T] SOURCE DEST
+  or:  cp [OPTION]... SOURCE... DIRECTORY
+  or:  cp [OPTION]... -t DIRECTORY SOURCE...
+Copy SOURCE to DEST, or multiple SOURCE(s) to DIRECTORY.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -a, --archive                same as -dR --preserve=all
+      --attributes-only        don't copy the file data, just the attributes
+      --backup[=CONTROL]       make a backup of each existing destination file
+  -b                           like --backup but does not accept an argument
+      --copy-contents          copy contents of special files when recursive
+  -d                           same as --no-dereference --preserve=links
+  -f, --force                  if an existing destination file cannot be
+                                 opened, remove it and try again (this option
+                                 is ignored when the -n option is also used)
+  -i, --interactive            prompt before overwrite (overrides a previous -n
+                                  option)
+  -H                           follow command-line symbolic links in SOURCE
+  -l, --link                   hard link files instead of copying
+  -L, --dereference            always follow symbolic links in SOURCE
+  -n, --no-clobber             do not overwrite an existing file (overrides
+                                 a previous -i option)
+  -P, --no-dereference         never follow symbolic links in SOURCE
+  -p                           same as --preserve=mode,ownership,timestamps
+      --preserve[=ATTR_LIST]   preserve the specified attributes (default:
+                                 mode,ownership,timestamps), if possible
+                                 additional attributes: context, links, xattr,
+                                 all
+  -c                           deprecated, same as --preserve=context
+      --no-preserve=ATTR_LIST  don't preserve the specified attributes
+      --parents                use full source file name under DIRECTORY
+  -R, -r, --recursive          copy directories recursively
+      --reflink[=WHEN]         control clone/CoW copies. See below
+      --remove-destination     remove each existing destination file before
+                                 attempting to open it (contrast with --force)
+      --sparse=WHEN            control creation of sparse files. See below
+      --strip-trailing-slashes  remove any trailing slashes from each SOURCE
+                                 argument
+  -s, --symbolic-link          make symbolic links instead of copying
+  -S, --suffix=SUFFIX          override the usual backup suffix
+  -t, --target-directory=DIRECTORY  copy all SOURCE arguments into DIRECTORY
+  -T, --no-target-directory    treat DEST as a normal file
+  -u, --update                 copy only when the SOURCE file is newer
+                                 than the destination file or when the
+                                 destination file is missing
+  -v, --verbose                explain what is being done
+  -x, --one-file-system        stay on this file system
+  -Z                           set SELinux security context of destination
+                                 file to default type
+      --context[=CTX]          like -Z, or if CTX is specified then set the
+                                 SELinux or SMACK security context to CTX
+      --help     display this help and exit
+      --version  output version information and exit
+
+By default, sparse SOURCE files are detected by a crude heuristic and the
+corresponding DEST file is made sparse as well.  That is the behavior
+selected by --sparse=auto.  Specify --sparse=always to create a sparse DEST
+file whenever the SOURCE file contains a long enough sequence of zero bytes.
+Use --sparse=never to inhibit creation of sparse files.
+
+When --reflink[=always] is specified, perform a lightweight copy, where the
+data blocks are copied only when modified.  If this is not possible the copy
+fails, or if --reflink=auto is specified, fall back to a standard copy.
+
+The backup suffix is '~', unless set with --suffix or SIMPLE_BACKUP_SUFFIX.
+The version control method may be selected via the --backup option or through
+the VERSION_CONTROL environment variable.  Here are the values:
+
+  none, off       never make backups (even if --backup is given)
+  numbered, t     make numbered backups
+  existing, nil   numbered if numbered backups exist, simple otherwise
+  simple, never   always make simple backups
+
+As a special case, cp makes a backup of SOURCE when the force and backup
+options are given and SOURCE and DEST are the same name for an existing,
+regular file.
+
+GNU coreutils online help: <http://www.gnu.org/software/coreutils/>
+For complete documentation, run: info coreutils 'cp invocation'
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro/result]$ cp file.txt new_file.txt
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro/result]$ ls
+file.txt  new_file.txt
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro/result]$ cp file.txt sbatch_intro
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro/result]$ ls
+file.txt  new_file.txt  sbatch_intro
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro/result]$ rm sbatch_intro
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro/result]$ ls
+file.txt  new_file.txt
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro/result]$ cp file.txt /cluster/home/bsdyhre/BIOS-IN5410/sbatch_intro/
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro/result]$ ls
+file.txt  new_file.txt
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro/result]$ cd ..
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ ls
+file.txt  result  slurm-4448160.out  test_script.sh
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ sbatch test_script.sh
+Submitted batch job 4448556
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ ls
+file.txt  result  slurm-4448160.out  test_script.sh
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ cd result/
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro/result]$ ls
+file.txt  new_file.txt
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro/result]$ cd..
+-bash: cd..: command not found
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro/result]$ cd ..
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ cat slurm-4448556.out
+Starting job 4448556 on c5-58 at Tue Nov 23 10:04:53 CET 2021
+
+  1) StdEnv
+Ran a job on file.txt!
+Finished running jobs
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- --------
+4448556        test_job          1                                             00:00:01      0:0
+4448556.bat+      batch          1        1   00:00:00          0   00:00:00   00:00:01      0:0
+4448556.ext+     extern          1        1   00:00:00          0   00:00:00   00:00:01      0:0
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages
+------------ ---------- ---------- ---------- -------- -------------- ----------
+4448556
+4448556.bat+          0          0          0        0              0          0
+4448556.ext+          0          0          0        0              0          0
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite
+------------ ------------ --------------- -------------- ------------ ---------------- --------------
+4448556
+4448556.bat+            0               0              0            0                0              0
+4448556.ext+        0.00M               0          0.00M            0                0              0
+
+Job 4448556 completed at Tue Nov 23 10:04:55 CET 2021
+(reverse-i-search)`ss': cp /cluster/projects/nn9986k/BIOS5410/sbatch_submi^Cion/test_script.sh
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ cp $SCRATCH/file.txt $SUBMITDIR/results/
+cp: cannot stat ‘/file.txt’: No such file or directory
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ sbatch test_script.sh
+Submitted batch job 4448637
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ nano test_script.sh
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ sbatch test_script.sh
+Submitted batch job 4448645
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ cat slurm-4448645.out
+Starting job 4448645 on c5-57 at Tue Nov 23 10:17:24 CET 2021
+
+  1) StdEnv
+cp: cannot stat ‘/cluster/work/jobs/4448645/files.txt’: No such file or directory
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- --------
+4448645        test_job          1                                             00:00:01      1:0
+4448645.bat+      batch          1        1   00:00:00          0   00:00:00   00:00:01      1:0
+4448645.ext+     extern          1        1   00:00:00          0   00:00:00   00:00:01      0:0
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages
+------------ ---------- ---------- ---------- -------- -------------- ----------
+4448645
+4448645.bat+          0          0          0        0              0          0
+4448645.ext+          0          0          0        0              0          0
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite
+------------ ------------ --------------- -------------- ------------ ---------------- --------------
+4448645
+4448645.bat+            0               0              0            0                0              0
+4448645.ext+        0.00M               0          0.00M            0                0              0
+
+Job 4448645 completed at Tue Nov 23 10:17:25 CET 2021
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ ls
+file.txt  result  slurm-4448160.out  slurm-4448556.out  slurm-4448637.out  slurm-4448645.out  test_script.sh
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ nano test_script.sh
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ sbatch test_script.sh
+Submitted batch job 4448661
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ cat slurm-4448661
+cat: slurm-4448661: No such file or directory
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ ls
+file.txt  result  slurm-4448160.out  slurm-4448556.out  slurm-4448637.out  slurm-4448645.out  slurm-4448661.out  test_script.sh
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ cat slurm-4448661.out
+Starting job 4448661 on c5-57 at Tue Nov 23 10:19:54 CET 2021
+
+  1) StdEnv
+Ran a job on file.txt!
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ cat slurm-4448661.out
+Starting job 4448661 on c5-57 at Tue Nov 23 10:19:54 CET 2021
+
+  1) StdEnv
+Ran a job on file.txt!
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ ls
+result  slurm-4448160.out  slurm-4448556.out  slurm-4448637.out  slurm-4448645.out  slurm-4448661.out  test_script.sh
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ sbatch test_script.sh
+Submitted batch job 4448725
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ squeue -u bsdyhre
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+           4448725    normal test_job  bsdyhre  R       0:14      1 c5-57
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ cat slurm-4448725.out
+Starting job 4448725 on c5-57 at Tue Nov 23 10:22:24 CET 2021
+
+  1) StdEnv
+Ran a job on file.txt!
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ cat slurm-4448661.out
+Starting job 4448661 on c5-57 at Tue Nov 23 10:19:54 CET 2021
+
+  1) StdEnv
+Ran a job on file.txt!
+Finished running jobs
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- --------
+4448661        test_job          1                                             00:01:31      0:0
+4448661.bat+      batch          1        1   00:00:00          0   00:00:00   00:01:31      0:0
+4448661.ext+     extern          1        1   00:00:00          0   00:00:00   00:01:31      0:0
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages
+------------ ---------- ---------- ---------- -------- -------------- ----------
+4448661
+4448661.bat+       348K          0       348K        0              0          0
+4448661.ext+          0          0          0        0              0          0
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite
+------------ ------------ --------------- -------------- ------------ ---------------- --------------
+4448661
+4448661.bat+        3.86M               0          3.86M        0.00M                0          0.00M
+4448661.ext+        0.00M               0          0.00M            0                0              0
+
+Job 4448661 completed at Tue Nov 23 10:21:25 CET 2021
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ sbatch test_script.sh
+Submitted batch job 4448742
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ squeue -u bsdyhre
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+           4448742    normal test_job  bsdyhre PD       0:00      1 (Priority)
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ scancel slurm-4448742.out
+scancel: error: Invalid job id slurm-4448742.out
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ scancel 4448742
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ squeue -u bsdyhre
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ ls
+result  slurm-4448160.out  slurm-4448556.out  slurm-4448637.out  slurm-4448645.out  slurm-4448661.out  slurm-4448725.out  slurm-4448742.out  test_script.sh
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ cat slurm-4448742.out
+Starting job 4448742 on c5-59 at Tue Nov 23 10:25:26 CET 2021
+
+  1) StdEnv
+Ran a job on file.txt!
+slurmstepd: error: *** JOB 4448742 ON c5-59 CANCELLED AT 2021-11-23T10:26:06 ***
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- --------
+4448742        test_job          1                                             00:00:40      0:0
+4448742.bat+      batch          1        1   00:00:00          0   00:00:00   00:00:42     0:15
+4448742.ext+     extern          1        1   00:00:00          0   00:00:00   00:00:40      0:0
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages
+------------ ---------- ---------- ---------- -------- -------------- ----------
+4448742
+4448742.bat+       348K          0       348K        0              0          0
+4448742.ext+          0          0          0        0              0          0
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite
+------------ ------------ --------------- -------------- ------------ ---------------- --------------
+4448742
+4448742.bat+        3.86M               0          3.86M        0.00M                0          0.00M
+4448742.ext+        0.00M               0          0.00M            0                0              0
+
+Job 4448742 completed at Tue Nov 23 10:26:08 CET 2021
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ ls
+result  slurm-4448160.out  slurm-4448556.out  slurm-4448637.out  slurm-4448645.out  slurm-4448661.out  slurm-4448725.out  slurm-4448742.out  test_script.sh
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ rm slurm-4448*
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ ls
+result  test_script.sh
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ rm -r result/
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ ls
+test_script.sh
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ cp ../fasta/*.fasta .
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ ls
+18SrRNA_Jalview_test.fasta  Alpha_globins.fasta  Ancient_walrus_MT.fasta  SARS-CoV-2_MSA_file1.fasta  test_script.sh
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ nano test_script.sh
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ ls
+18SrRNA_Jalview_test.fasta  Alpha_globins.fasta  Ancient_walrus_MT.fasta  SARS-CoV-2_MSA_file1.fasta  test_fasta.sh  test_script.sh
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ sbatch test_fasta.sh 18SrRNA_Jalview_test.fasta
+Submitted batch job 4448833
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ cat slurm-4448833.out
+Starting job 4448833 on c5-59 at Tue Nov 23 10:42:17 CET 2021
+
+  1) StdEnv
+cp: missing destination file operand after ‘/cluster/work/jobs/4448833’
+Try 'cp --help' for more information.
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- --------
+4448833      allocation          1                                             00:00:00      1:0
+4448833.bat+      batch          1        1   00:00:00          0   00:00:00   00:00:00      1:0
+4448833.ext+     extern          1        1   00:00:00          0   00:00:00   00:00:00      0:0
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages
+------------ ---------- ---------- ---------- -------- -------------- ----------
+4448833
+4448833.bat+          0          0          0        0              0          0
+4448833.ext+          0          0          0        0              0          0
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite
+------------ ------------ --------------- -------------- ------------ ---------------- --------------
+4448833
+4448833.bat+            0               0              0            0                0              0
+4448833.ext+        0.00M               0          0.00M            0                0              0
+
+Job 4448833 completed at Tue Nov 23 10:42:18 CET 2021
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ nano test_fasta.sh
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ sbatch test_fasta.sh 18SrRNA_Jalview_test.fasta
+Submitted batch job 4448845
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ cat slurm-4448845.out
+Starting job 4448845 on c5-59 at Tue Nov 23 10:45:08 CET 2021
+
+  1) StdEnv
+Finished running job on 18SrRNA_Jalview_test.fasta
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- --------
+4448845        test_job          1                                             00:00:01      0:0
+4448845.bat+      batch          1        1   00:00:00          0   00:00:00   00:00:01      0:0
+4448845.ext+     extern          1        1   00:00:00          0   00:00:00   00:00:01      0:0
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages
+------------ ---------- ---------- ---------- -------- -------------- ----------
+4448845
+4448845.bat+          0          0          0        0              0          0
+4448845.ext+          0          0          0        0              0          0
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite
+------------ ------------ --------------- -------------- ------------ ---------------- --------------
+4448845
+4448845.bat+            0               0              0            0                0              0
+4448845.ext+        0.00M               0          0.00M            0                0              0
+
+Job 4448845 completed at Tue Nov 23 10:45:09 CET 2021
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ ls result/
+18SrRNA_Jalview_test.fasta.out
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ cat 18SrRNA_Jalview_test.fasta
+18SrRNA_Jalview_test.fasta
+Alpha_globins.fasta
+Ancient_walrus_MT.fasta
+SARS-CoV-2_MSA_file1.fasta
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ for f in $(ls *.fasta);do sbatch test_fasta.sh $f;done
+Submitted batch job 4448940
+Submitted batch job 4448941
+Submitted batch job 4448942
+Submitted batch job 4448943
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ cat result/18SrRNA_Jalview_test.fasta.out
+   35    36 31897 18SrRNA_Jalview_test.fasta
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ head 18SrRNA_Jalview_test.fasta
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ ls
+18SrRNA_Jalview_test.fasta  Ancient_walrus_MT.fasta  SARS-CoV-2_MSA_file1.fasta  slurm-4448845.out  slurm-4448941.out  slurm-4448943.out  test_script.sh
+Alpha_globins.fasta         result                   slurm-4448833.out           slurm-4448940.out  slurm-4448942.out  test_fasta.sh
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ cat result/*.fasta.out
+   35    36 31897 18SrRNA_Jalview_test.fasta
+   7   27 1976 Alpha_globins.fasta
+    89     90 613725 Ancient_walrus_MT.fasta
+    60    362 900963 SARS-CoV-2_MSA_file1.fasta
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ ls
+18SrRNA_Jalview_test.fasta  Ancient_walrus_MT.fasta  SARS-CoV-2_MSA_file1.fasta  slurm-4448845.out  slurm-4448941.out  slurm-4448943.out  test_script.sh
+Alpha_globins.fasta         result                   slurm-4448833.out           slurm-4448940.out  slurm-4448942.out  test_fasta.sh
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ rm *.fasta
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ ls
+result  slurm-4448833.out  slurm-4448845.out  slurm-4448940.out  slurm-4448941.out  slurm-4448942.out  slurm-4448943.out  test_fasta.sh  test_script.sh
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ rm -r result
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ ls
+slurm-4448833.out  slurm-4448845.out  slurm-4448940.out  slurm-4448941.out  slurm-4448942.out  slurm-4448943.out  test_fasta.sh  test_script.sh
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ rm *.out
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ ls
+test_fasta.sh  test_script.sh
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ $ module avail
+-bash: $: command not found
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ pwd
+/cluster/home/bsdyhre/BIOS-IN5410/sbatch_intro
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ cd ..
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410]$ cd ..
+[bsdyhre@login-5.SAGA ~]$ module avail
+
+------------------------------------------------------------------------------------ /cluster/modulefiles/all ------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------- /cluster/modulefiles/Core ------------------------------------------------------------------------------------
+   BuildEnv    eessi-pilot/2021.03 (S)    StdEnv (S,L)    VaspExtra    VASPModules
+
+--------------------------------------------------------------------------------- /cluster/modulefiles/external ----------------------------------------------------------------------------------
+   appusage/1.0    hpcx/2.4    hpcx/2.5    hpcx/2.6    hpcx/2.7    hpcx/2.8    hpcx/2.9
+
+  Where:
+   S:        Module is Sticky, requires --force to unload or purge
+   L:        Module is loaded
+   Aliases:  Aliases exist: foo/1.2.3 (1.2) means that "module load foo/1.2" will load foo/1.2.3
+
+Use "module spider" to find all possible modules.
+Use "module keyword key1 key2 ..." to search for all possible modules matching any of the "keys".
+
+
+[bsdyhre@login-5.SAGA ~]$ module list
+
+Currently Loaded Modules:
+  1) StdEnv (S)
+
+  Where:
+   S:  Module is Sticky, requires --force to unload or purge
+
+
+
+[bsdyhre@login-5.SAGA ~]$ module avail VCFtools
+
+------------------------------------------------------------------------------------ /cluster/modulefiles/all ------------------------------------------------------------------------------------
+   VCFtools/0.1.16-foss-2018b-Perl-5.28.0    VCFtools/0.1.16-GCC-8.3.0    VCFtools/0.1.16-GCC-9.3.0    VCFtools/0.1.16-intel-2018b-Perl-5.28.0
+
+Use "module spider" to find all possible modules.
+Use "module keyword key1 key2 ..." to search for all possible modules matching any of the "keys".
+
+
+[bsdyhre@login-5.SAGA ~]$ $ module help VCFtools/0.1.16-GCC-9.3.0
+-bash: $: command not found
+[bsdyhre@login-5.SAGA ~]$ module load VCFtools/0.1.16-GCC-9.3.0
+[bsdyhre@login-5.SAGA ~]$ module help VCFtools/0.1.16-GCC-9.3.0
+
+---------------------------------------------------------------------- Module Specific Help for "VCFtools/0.1.16-GCC-9.3.0" ----------------------------------------------------------------------
+
+Description
+===========
+The aim of VCFtools is to provide
+ easily accessible methods for working with complex
+ genetic variation data in the form of VCF files.
+
+
+More information
+================
+ - Homepage: https://vcftools.github.io
+
+
+[bsdyhre@login-5.SAGA ~]$ module list
+
+Currently Loaded Modules:
+  1) StdEnv                    (S)   4) binutils/2.34-GCCcore-9.3.0 (H)   7) ncurses/6.2-GCCcore-9.3.0     (H)  10) bzip2/1.0.8-GCCcore-9.3.0 (H)  13) HTSlib/1.10.2-GCC-9.3.0
+  2) GCCcore/9.3.0                   5) GCC/9.3.0                         8) libreadline/8.0-GCCcore-9.3.0 (H)  11) XZ/5.2.5-GCCcore-9.3.0    (H)  14) VCFtools/0.1.16-GCC-9.3.0
+  3) zlib/1.2.11-GCCcore-9.3.0 (H)   6) expat/2.2.9-GCCcore-9.3.0   (H)   9) Perl/5.30.2-GCCcore-9.3.0          12) cURL/7.69.1-GCCcore-9.3.0 (H)
+
+  Where:
+   S:  Module is Sticky, requires --force to unload or purge
+   H:             Hidden Module
+
+
+
+[bsdyhre@login-5.SAGA ~]$ cp  /cluster/projects/nn9986k/BIOS5410/sbatch_submission/Example_Bluefin_tuna.vcf.gz /cluster/home/bsdyhre/BIOS-IN5410/sbatch_intro/
+[bsdyhre@login-5.SAGA ~]$ cd /cluster/home/bsdyhre/BIOS-IN5410/sbatch_intro/
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ ls
+Example_Bluefin_tuna.vcf.gz  test_fasta.sh  test_script.sh
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ ls -hal
+total 1.6G
+drwxrwsr-x 2 bsdyhre bsdyhre_g    3 Nov 23 11:08 .
+drwxrwsr-x 8 bsdyhre bsdyhre_g    6 Nov 23 09:36 ..
+-rw-rw-r-- 1 bsdyhre bsdyhre_g 1.6G Nov 23 11:08 Example_Bluefin_tuna.vcf.gz
+-rw-rw-r-- 1 bsdyhre bsdyhre_g 1001 Nov 23 10:44 test_fasta.sh
+-rw-rw-r-- 1 bsdyhre bsdyhre_g 1.2K Nov 23 10:19 test_script.sh
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ cp test_fasta.sh test_vcf.sh
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ ls
+Example_Bluefin_tuna.vcf.gz  test_fasta.sh  test_script.sh  test_vcf.sh
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ nano test_vcf.sh
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ cd /cluster/
+[bsdyhre@login-5.SAGA /cluster]$ cd projects/nn9986k/BIOS5410/sbatch_submission/
+[bsdyhre@login-5.SAGA /cluster/projects/nn9986k/BIOS5410/sbatch_submission]$ ls
+allChroms.tar.gz  Example_Bluefin_tuna.vcf.gz  fileMoveScript.py  test_script.sh  test_vcf.sh
+[bsdyhre@login-5.SAGA /cluster/projects/nn9986k/BIOS5410/sbatch_submission]$ cd
+[bsdyhre@login-5.SAGA ~]$ cd /cluster/home/bsdyhre/BIOS-IN5410/sbatch_intro/
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ ls
+Example_Bluefin_tuna.vcf.gz  test_fasta.sh  test_script.sh  test_vcf.sh
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ cp  /cluster/projects/nn9986k/BIOS5410/sbatch_submission/test_vcf.sh /cluster/home/bsdyhre/BIOS-IN5410/sbatch_intro/
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ ls
+Example_Bluefin_tuna.vcf.gz  test_fasta.sh  test_script.sh  test_vcf.sh
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ nano test_vcf.sh
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ sbatch test_vcf.sh Example_Bluefin_tuna.vcf.gz
+Submitted batch job 4449281
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ squeue -u bsdyhre
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+           4449281    normal test_job  bsdyhre PD       0:00      1 (None)
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ squeue -u bsdyhre
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+           4449281    normal test_job  bsdyhre  R       0:38      1 c5-59
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ squeue -u bsdyhre
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ cd result/
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro/result]$ ls
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro/result]$ cd ..
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ ls
+Example_Bluefin_tuna.vcf.gz  result  slurm-4449281.out  test_fasta.sh  test_script.sh  test_vcf.sh
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ cat slurm-4449281.out
+Starting job 4449281 on c5-59 at Tue Nov 23 11:15:40 CET 2021
+
+  1) StdEnv
+
+Currently Loaded Modules:
+  1) StdEnv                      (S)   8) libreadline/8.0-GCCcore-9.3.0 (H)
+  2) GCCcore/9.3.0                     9) Perl/5.30.2-GCCcore-9.3.0
+  3) zlib/1.2.11-GCCcore-9.3.0   (H)  10) bzip2/1.0.8-GCCcore-9.3.0     (H)
+  4) binutils/2.34-GCCcore-9.3.0 (H)  11) XZ/5.2.5-GCCcore-9.3.0        (H)
+  5) GCC/9.3.0                        12) cURL/7.69.1-GCCcore-9.3.0     (H)
+  6) expat/2.2.9-GCCcore-9.3.0   (H)  13) HTSlib/1.10.2-GCC-9.3.0
+  7) ncurses/6.2-GCCcore-9.3.0   (H)  14) VCFtools/0.1.16-GCC-9.3.0
+
+  Where:
+   H:  Hidden Module
+   S:  Module is Sticky, requires --force to unload or purge
+
+
+
+
+VCFtools - 0.1.16
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+        --gzvcf Example_Bluefin_tuna.vcf.gz
+        --depth
+        --out Example_Bluefin_tuna.vcf.gz.out
+
+Using zlib version: 1.2.11
+Warning: Expected at least 2 parts in FORMAT entry: ID=PGT,Number=1,Type=String,Description="Physical phasing haplotype information, describing how the alternate alleles are phased in relation to one another">
+Warning: Expected at least 2 parts in FORMAT entry: ID=PID,Number=1,Type=String,Description="Physical phasing ID information, where each unique ID within a given sample (but not across samples) connects records within a phasing group">
+Warning: Expected at least 2 parts in FORMAT entry: ID=PL,Number=G,Type=Integer,Description="Normalized, Phred-scaled likelihoods for genotypes as defined in the VCF specification">
+Warning: Expected at least 2 parts in FORMAT entry: ID=RGQ,Number=1,Type=Integer,Description="Unconditional reference genotype confidence, encoded as a phred quality -10*log10 p(genotype call is wrong)">
+Warning: Expected at least 2 parts in INFO entry: ID=AC,Number=A,Type=Integer,Description="Allele count in genotypes, for each ALT allele, in the same order as listed">
+Warning: Expected at least 2 parts in INFO entry: ID=AC,Number=A,Type=Integer,Description="Allele count in genotypes, for each ALT allele, in the same order as listed">
+Warning: Expected at least 2 parts in INFO entry: ID=AF,Number=A,Type=Float,Description="Allele Frequency, for each ALT allele, in the same order as listed">
+Warning: Expected at least 2 parts in INFO entry: ID=AF,Number=A,Type=Float,Description="Allele Frequency, for each ALT allele, in the same order as listed">
+Warning: Expected at least 2 parts in INFO entry: ID=MLEAC,Number=A,Type=Integer,Description="Maximum likelihood expectation (MLE) for the allele counts (not necessarily the same as the AC), for each ALT allele, in the same order as listed">
+Warning: Expected at least 2 parts in INFO entry: ID=MLEAC,Number=A,Type=Integer,Description="Maximum likelihood expectation (MLE) for the allele counts (not necessarily the same as the AC), for each ALT allele, in the same order as listed">
+Warning: Expected at least 2 parts in INFO entry: ID=MLEAF,Number=A,Type=Float,Description="Maximum likelihood expectation (MLE) for the allele frequency (not necessarily the same as the AF), for each ALT allele, in the same order as listed">
+Warning: Expected at least 2 parts in INFO entry: ID=MLEAF,Number=A,Type=Float,Description="Maximum likelihood expectation (MLE) for the allele frequency (not necessarily the same as the AF), for each ALT allele, in the same order as listed">
+After filtering, kept 71 out of 71 Individuals
+Outputting Mean Depth by Individual
+After filtering, kept 4231469 out of a possible 4231469 Sites
+Run Time = 93.00 seconds
+List the SCRATCH directory below
+Example_Bluefin_tuna.vcf.gz
+Example_Bluefin_tuna.vcf.gz.out.idepth
+cp: cannot stat ‘Example_Bluefin_tuna.vcf.gz.out’: No such file or directory
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- --------
+4449281        test_job          1                                             00:01:40      1:0
+4449281.bat+      batch          1        1   00:01:35          0   00:01:35   00:01:40      1:0
+4449281.ext+     extern          1        1   00:00:00          0   00:00:00   00:01:41      0:0
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages
+------------ ---------- ---------- ---------- -------- -------------- ----------
+4449281
+4449281.bat+      4000K          0      4000K        0              0          0
+4449281.ext+          0          0          0        0              0          0
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite
+------------ ------------ --------------- -------------- ------------ ---------------- --------------
+4449281
+4449281.bat+     1567.09M               0       1567.09M     1558.66M                0       1558.66M
+4449281.ext+        0.00M               0          0.00M            0                0              0
+
+Job 4449281 completed at Tue Nov 23 11:17:21 CET 2021
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ nano test_vcf.sh
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ sbatch test_vcf.sh Example_Bluefin_tuna.vcf.gz
+Submitted batch job 4449530
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ squeue -u bsdyhre
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+           4449530    normal test_job  bsdyhre  R       1:00      1 c5-59
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ squeue -u bsdyhre
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+           4449530    normal test_job  bsdyhre  R       1:27      1 c5-59
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ squeue -u bsdyhre
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ cat slurm-4449530.out
+Starting job 4449530 on c5-59 at Tue Nov 23 11:24:13 CET 2021
+
+  1) StdEnv
+
+Currently Loaded Modules:
+  1) StdEnv                      (S)   8) libreadline/8.0-GCCcore-9.3.0 (H)
+  2) GCCcore/9.3.0                     9) Perl/5.30.2-GCCcore-9.3.0
+  3) zlib/1.2.11-GCCcore-9.3.0   (H)  10) bzip2/1.0.8-GCCcore-9.3.0     (H)
+  4) binutils/2.34-GCCcore-9.3.0 (H)  11) XZ/5.2.5-GCCcore-9.3.0        (H)
+  5) GCC/9.3.0                        12) cURL/7.69.1-GCCcore-9.3.0     (H)
+  6) expat/2.2.9-GCCcore-9.3.0   (H)  13) HTSlib/1.10.2-GCC-9.3.0
+  7) ncurses/6.2-GCCcore-9.3.0   (H)  14) VCFtools/0.1.16-GCC-9.3.0
+
+  Where:
+   H:  Hidden Module
+   S:  Module is Sticky, requires --force to unload or purge
+
+
+
+
+VCFtools - 0.1.16
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+        --gzvcf Example_Bluefin_tuna.vcf.gz
+        --depth
+        --out Example_Bluefin_tuna.vcf.gz.out
+
+Using zlib version: 1.2.11
+Warning: Expected at least 2 parts in FORMAT entry: ID=PGT,Number=1,Type=String,Description="Physical phasing haplotype information, describing how the alternate alleles are phased in relation to one another">
+Warning: Expected at least 2 parts in FORMAT entry: ID=PID,Number=1,Type=String,Description="Physical phasing ID information, where each unique ID within a given sample (but not across samples) connects records within a phasing group">
+Warning: Expected at least 2 parts in FORMAT entry: ID=PL,Number=G,Type=Integer,Description="Normalized, Phred-scaled likelihoods for genotypes as defined in the VCF specification">
+Warning: Expected at least 2 parts in FORMAT entry: ID=RGQ,Number=1,Type=Integer,Description="Unconditional reference genotype confidence, encoded as a phred quality -10*log10 p(genotype call is wrong)">
+Warning: Expected at least 2 parts in INFO entry: ID=AC,Number=A,Type=Integer,Description="Allele count in genotypes, for each ALT allele, in the same order as listed">
+Warning: Expected at least 2 parts in INFO entry: ID=AC,Number=A,Type=Integer,Description="Allele count in genotypes, for each ALT allele, in the same order as listed">
+Warning: Expected at least 2 parts in INFO entry: ID=AF,Number=A,Type=Float,Description="Allele Frequency, for each ALT allele, in the same order as listed">
+Warning: Expected at least 2 parts in INFO entry: ID=AF,Number=A,Type=Float,Description="Allele Frequency, for each ALT allele, in the same order as listed">
+Warning: Expected at least 2 parts in INFO entry: ID=MLEAC,Number=A,Type=Integer,Description="Maximum likelihood expectation (MLE) for the allele counts (not necessarily the same as the AC), for each ALT allele, in the same order as listed">
+Warning: Expected at least 2 parts in INFO entry: ID=MLEAC,Number=A,Type=Integer,Description="Maximum likelihood expectation (MLE) for the allele counts (not necessarily the same as the AC), for each ALT allele, in the same order as listed">
+Warning: Expected at least 2 parts in INFO entry: ID=MLEAF,Number=A,Type=Float,Description="Maximum likelihood expectation (MLE) for the allele frequency (not necessarily the same as the AF), for each ALT allele, in the same order as listed">
+Warning: Expected at least 2 parts in INFO entry: ID=MLEAF,Number=A,Type=Float,Description="Maximum likelihood expectation (MLE) for the allele frequency (not necessarily the same as the AF), for each ALT allele, in the same order as listed">
+After filtering, kept 71 out of 71 Individuals
+Outputting Mean Depth by Individual
+After filtering, kept 4231469 out of a possible 4231469 Sites
+Run Time = 90.00 seconds
+List the SCRATCH directory below
+Example_Bluefin_tuna.vcf.gz
+Example_Bluefin_tuna.vcf.gz.out.idepth
+Finished running a job on Example_Bluefin_tuna.vcf.gz
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- --------
+4449530        test_job          1                                             00:01:35      0:0
+4449530.bat+      batch          1        1   00:01:31          0   00:01:31   00:01:35      0:0
+4449530.ext+     extern          1        1   00:00:00          0   00:00:00   00:01:35      0:0
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages
+------------ ---------- ---------- ---------- -------- -------------- ----------
+4449530
+4449530.bat+      4164K          0      4164K        0              0          0
+4449530.ext+          0          0          0        0              0          0
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite
+------------ ------------ --------------- -------------- ------------ ---------------- --------------
+4449530
+4449530.bat+     1567.09M               0       1567.09M     1558.66M                0       1558.66M
+4449530.ext+        0.00M               0          0.00M            0                0              0
+
+Job 4449530 completed at Tue Nov 23 11:25:49 CET 2021
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ ls
+Example_Bluefin_tuna.vcf.gz  result  slurm-4449281.out  slurm-4449530.out  test_fasta.sh  test_script.sh  test_vcf.sh
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ cd result/
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro/result]$ ls
+Example_Bluefin_tuna.vcf.gz.out.idepth
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro/result]$ cat Example_Bluefin_tuna.vcf.gz.out.idepth
+INDV    N_SITES MEAN_DEPTH
+ALB-05  4228365 3.78231
+ALB-09  4226749 2.52693
+ALB-12  4227810 3.94783
+ALB-21  4227790 2.18174
+ALB-24  4226206 1.29432
+ALB-27  4228078 2.8621
+CYPR-LS-0-315   4229510 3.27126
+CYPR-LS-0-330   4229730 3.67001
+CYPR-LS-0-331   4229356 3.20326
+CYPR-LS-0-34    4228034 2.96605
+CYPR-LS-0-352   4229994 3.94022
+CYPR-LS-0-41    4229482 2.67089
+CYPR-LS-0-45    4229311 2.31136
+CYPR-LS-0-49    4229418 3.07382
+IEO-BA-0-104    4230009 2.35383
+IEO-BA-0-107    4229961 3.8333
+IEO-BA-0-109    4230065 1.4868
+IEO-BA-0-110    4230229 1.98831
+IEO-BA-0-113    4229682 3.66652
+IEO-BA-0-121    4230374 3.65653
+IEO-BA-0-63     4230440 3.64372
+IEO-BA-0-67     4230588 3.02078
+IEO-BA-0-68     4230443 4.58362
+IEO-BA-0-77     4230858 5.6215
+M_TUN005        4231446 18.5794
+M_TUN006        4231438 16.9119
+M_TUN007        4231421 15.8678
+M_TUN008        4231451 22.6529
+M_TUN009        4231452 20.2527
+M_TUN010        4231457 23.2804
+M_TUN011        4231455 21.9754
+M_TUN012        4231458 21.8233
+M_TUN013        4231462 26.7839
+M_TUN014        4231455 27.507
+M_TUN015        4230109 6.14258
+M_TUN016        4229705 5.47005
+M_TUN017        4230362 6.58458
+M_TUN018        4229523 5.32007
+M_TUN019        4229203 5.1618
+M_TUN022        4230234 6.14156
+M_TUN023        4230321 6.50934
+M_TUN024        4231236 9.6521
+M_TUN025        4230329 6.4785
+M_TUN026        4229526 5.50814
+M_TUN027        4229587 5.42677
+M_TUN028        4228814 4.84014
+M_TUN029        4228999 4.8264
+M_TUN030        4230523 6.72382
+M_TUN031        4230480 6.54833
+M_TUN032        4230090 6.14954
+M_TUN033        4230733 7.32059
+M_TUN034        4230747 7.3652
+M_TUN035        4230190 6.15407
+M_TUN036        4230489 6.70308
+M_TUN037        4230921 7.72735
+M_TUN038        4230265 6.24275
+M_TUN039        4230339 6.35193
+M_TUN040        4229413 5.33628
+M_TUN041        4230494 6.91459
+M_TUN042        4230416 6.4836
+M_TUN043        4230494 6.60131
+M_TUN044        4230398 6.73847
+N17040108       4230915 5.99681
+UNIB-SI-0-70    4230118 3.47665
+UNIB-SI-0-77    4230334 2.52056
+UNIB-SI-0-79    4230420 4.4817
+UNIB-SI-0-92    4230529 2.43875
+W14050007       4230127 2.32061
+W14050014       4230523 4.07696
+W14050029       4230225 1.89485
+W14050097       4230129 3.31268
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro/result]$ cd ..
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ nano test_vcf.sh
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ sbatch test_vcf.sh Example_Bluefin_tuna.vcf.gz
+Submitted batch job 4449668
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ squeue -u bsdyhre
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+           4449668    normal test_job  bsdyhre PD       0:00      1 (None)
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ squeue -u bsdyhre
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+           4449668    normal test_job  bsdyhre PD       0:00      1 (None)
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ squeue -u bsdyhre
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ cat result/Example_Bluefin_tuna.vcf.gz.out.i
+cat: result/Example_Bluefin_tuna.vcf.gz.out.i: No such file or directory
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ cat result/Example_Bluefin_tuna.vcf.gz.out.i
+Example_Bluefin_tuna.vcf.gz.out.idepth  Example_Bluefin_tuna.vcf.gz.out.imiss
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ cat result/Example_Bluefin_tuna.vcf.gz.out.imiss
+INDV    N_DATA  N_GENOTYPES_FILTERED    N_MISS  F_MISS
+ALB-05  4231469 0       1116568 0.263872
+ALB-09  4231469 0       1583255 0.374162
+ALB-12  4231469 0       825524  0.195092
+ALB-21  4231469 0       1945038 0.45966
+ALB-24  4231469 0       2774010 0.655567
+ALB-27  4231469 0       1354516 0.320105
+CYPR-LS-0-315   4231469 0       1097072 0.259265
+CYPR-LS-0-330   4231469 0       919508  0.217302
+CYPR-LS-0-331   4231469 0       1178191 0.278435
+CYPR-LS-0-34    4231469 0       1116240 0.263795
+CYPR-LS-0-352   4231469 0       814164  0.192407
+CYPR-LS-0-41    4231469 0       1468720 0.347095
+CYPR-LS-0-45    4231469 0       1710228 0.404169
+CYPR-LS-0-49    4231469 0       1200310 0.283663
+IEO-BA-0-104    4231469 0       1766281 0.417416
+IEO-BA-0-107    4231469 0       1121173 0.264961
+IEO-BA-0-109    4231469 0       2686363 0.634854
+IEO-BA-0-110    4231469 0       2200405 0.52001
+IEO-BA-0-113    4231469 0       1087102 0.256909
+IEO-BA-0-121    4231469 0       881024  0.208208
+IEO-BA-0-63     4231469 0       1038630 0.245454
+IEO-BA-0-67     4231469 0       1466101 0.346476
+IEO-BA-0-68     4231469 0       654501  0.154675
+IEO-BA-0-77     4231469 0       622374  0.147082
+M_TUN005        4231469 0       3411    0.000806103
+M_TUN006        4231469 0       2716    0.000641857
+M_TUN007        4231469 0       3227    0.000762619
+M_TUN008        4231469 0       2582    0.00061019
+M_TUN009        4231469 0       2317    0.000547564
+M_TUN010        4231469 0       2172    0.000513297
+M_TUN011        4231469 0       2090    0.000493918
+M_TUN012        4231469 0       1834    0.000433419
+M_TUN013        4231469 0       1926    0.000455161
+M_TUN014        4231469 0       2039    0.000481866
+M_TUN015        4231469 0       114740  0.0271159
+M_TUN016        4231469 0       183747  0.0434239
+M_TUN017        4231469 0       86300   0.0203948
+M_TUN018        4231469 0       206751  0.0488603
+M_TUN019        4231469 0       227353  0.0537291
+M_TUN022        4231469 0       120909  0.0285738
+M_TUN023        4231469 0       90304   0.0213411
+M_TUN024        4231469 0       12994   0.0030708
+M_TUN025        4231469 0       92881   0.0219501
+M_TUN026        4231469 0       181625  0.0429224
+M_TUN027        4231469 0       189538  0.0447925
+M_TUN028        4231469 0       283440  0.0669838
+M_TUN029        4231469 0       285406  0.0674484
+M_TUN030        4231469 0       77710   0.0183648
+M_TUN031        4231469 0       87837   0.020758
+M_TUN032        4231469 0       114134  0.0269727
+M_TUN033        4231469 0       52436   0.0123919
+M_TUN034        4231469 0       51020   0.0120573
+M_TUN035        4231469 0       115103  0.0272017
+M_TUN036        4231469 0       78183   0.0184766
+M_TUN037        4231469 0       40223   0.00950568
+M_TUN038        4231469 0       107269  0.0253503
+M_TUN039        4231469 0       100455  0.02374
+M_TUN040        4231469 0       202561  0.0478701
+M_TUN041        4231469 0       68637   0.0162206
+M_TUN042        4231469 0       92111   0.0217681
+M_TUN043        4231469 0       84138   0.0198839
+M_TUN044        4231469 0       85206   0.0201363
+N17040108       4231469 0       342984  0.0810555
+UNIB-SI-0-70    4231469 0       1124589 0.265768
+UNIB-SI-0-77    4231469 0       1731125 0.409107
+UNIB-SI-0-79    4231469 0       710176  0.167832
+UNIB-SI-0-92    4231469 0       1791802 0.423447
+W14050007       4231469 0       1781105 0.420919
+W14050014       4231469 0       797719  0.188521
+W14050029       4231469 0       2207935 0.521789
+W14050097       4231469 0       1073993 0.253811
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ ls
+Example_Bluefin_tuna.vcf.gz  result  slurm-4449281.out  slurm-4449530.out  slurm-4449668.out  test_fasta.sh  test_script.sh  test_vcf.sh
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ rm *.out
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ ls
+Example_Bluefin_tuna.vcf.gz  result  test_fasta.sh  test_script.sh  test_vcf.sh
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ rm -r result
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ rm *.gz
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ ls
+test_fasta.sh  test_script.sh  test_vcf.sh
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ cd ..
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410]$ cd sbatch_intro/
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ mkdir chromatograms
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro]$ cd chromatograms/
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro/chromatograms]$ cp /cluster/projects/nn9986k/BIOS5410/sbatch_submission/allChroms.tar.gz .
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro/chromatograms]$ ls
+allChroms.tar.gz
+[bsdyhre@login-5.SAGA ~/BIOS-IN5410/sbatch_intro/chromatograms]$
